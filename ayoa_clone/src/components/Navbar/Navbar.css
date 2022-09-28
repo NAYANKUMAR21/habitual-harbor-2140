@@ -1,0 +1,160 @@
+
+.nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 10px;
+   margin: 0rem;
+    
+}
+
+.logo{
+    width:150px;
+    /* border:1px solid black; */
+}
+ul{
+    display: flex;    
+}
+li{
+   list-style-type: none; 
+    padding: 5px;
+}
+li:hover{
+    text-decoration: underline;
+}
+
+/* .menu{
+    
+    border:1px solid black;   
+} */
+.login{
+    /* colorScheme={"white"} borderRadius="20px" color={"black"} border="0.5px solid black" */
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    border: 1px solid black;
+}
+.login:hover{
+    border-radius: 20px;
+    border: 1px solid #20befc;
+    text-decoration: none;
+}
+.EN{
+    width: 25px;
+}
+.England{
+    margin-top: -1px;
+}
+.flag{
+    display:flex;
+    gap:5px
+}
+.flag-flex:hover{
+    color: blue;
+
+}
+.flag-flex{
+    display:flex;
+    gap:15px;
+    margin-top: 5px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.flag:hover .nayan4{
+    position: absolute;
+    top: 33%;
+    width: 10%;
+    border-radius: 10px;
+    border: 1px solid #20befc;
+    padding: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: white;
+    z-index: 1;
+}
+.nayan1,.nayan2,.nayan3,.nayan4{
+    display: none;
+}
+.nayan1 p,.nayan2 p,.nayan3 p{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.nayan1 p:hover,.nayan2 p:hover,.nayan3 p:hover{
+    color: blue;
+}
+
+.products:hover .nayan1,.products:hover .nayan2,.products:hover .nayan3{
+    position: absolute;
+    width: 14%;
+    border-radius: 10px;
+    border: 1px solid #20befc;
+    padding: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: white;
+    z-index: 1;
+
+    
+}
+
+
+
+
+
+.menu .hamburger{
+    display: none;
+}
+
+
+@media all and (min-width:768px) and (max-width:1050px){
+    .menu ul{
+        display: none;
+    }
+    
+    .menu .hamburger{
+        margin-right: 40px;
+        margin-top: 18px;
+        display: block;
+        font-size: 20px;
+    }
+    .burger{
+        height: 30px;
+        border-radius: 5px;
+        
+        background:#20befc;
+        
+        padding: 5px;
+    }
+    
+}
+@media all and (min-width:320px) and (max-width:767px){
+    .menu ul{
+        display: none;
+    }
+    
+    .menu .hamburger{
+        margin-right: 40px;
+        margin-top: 18px;
+        display: block;
+        font-size: 20px;
+    }
+    .burger{
+        height: 30px;
+        border-radius: 5px;
+        background:#20befc;
+        
+        padding: 5px;
+    }
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+}
