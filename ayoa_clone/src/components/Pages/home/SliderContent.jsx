@@ -58,6 +58,7 @@ export default Slider
                 <img src="https://www.ayoa.com/wp-content/uploads/2021/11/mm_thumbnail_new.png" alt="" />
               </a>
               </div>
+              
               <div>
               <Text fontSize="md" style={{textAlign:"left"}} fontWeight="800" md={2} color="teal">How to use mind maps</Text>
               <p>02:22</p>
