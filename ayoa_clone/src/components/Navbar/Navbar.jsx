@@ -24,6 +24,7 @@ const Navbar = () => {
     const [state,setState] = useState(false)
     console.log(state)
     
+    
 
   return (
     <div className='parent-nav'>
