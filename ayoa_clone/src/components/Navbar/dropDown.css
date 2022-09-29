@@ -1,18 +1,16 @@
 .mobile-menu{
     width:30%;
-    position: absolute;
+    top: 7%;
     left:63%;
     /* border: 1px solid black; */
-    z-index: 99;
-    transition-delay: 0.5s linear;
-    
-    
+    z-index: 9;
+    transition-delay: 0.5s linear; 
 }
 .mobile-menu ul{
     width:100%;
     border-radius: 20px;
     /* border: 1px solid black; */
-    position: absolute;
+    
     display:grid;
     grid-template-columns: repeat(1,1fr);
     justify-content:start;
