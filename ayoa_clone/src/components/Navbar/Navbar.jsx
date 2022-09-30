@@ -118,7 +118,7 @@ const Navbar = () => {
                 </ListItem>
                 <ListItem >
                     <Button colorScheme={"white"} borderRadius="20px" color={"black"} border="0.5px solid black" className='login'>
-                    <NavLink to="/">Login</NavLink>
+                    <NavLink to="/login">Login</NavLink>
                     </Button>
                 </ListItem>
             </UnorderedList>
