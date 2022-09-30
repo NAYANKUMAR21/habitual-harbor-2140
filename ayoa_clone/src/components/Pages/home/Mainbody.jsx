@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Main.css"
+import Footer from './Footer'
 import { Box, Text } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
@@ -31,10 +32,14 @@ const Mainbody = () => {
         <Text style={{textAlign:"center"}} fontSize="5xl" fontWeight="800">Be different,Work visually</Text>
         <Text style={{textAlign:"center"}} fontSize="xl" mt={5} fontWeight="none">Try the world’s most visual productivity app. Supercharge thinking, planning and <br /> learning with AI, mind maps, task boards, and more</Text>
         <div className='get-started'>
-          <input type="text" placeholder='Enter your Email'/>
-          <NavLink to="/">
+          <div>
+            <input type="text" placeholder='Enter your Email'/>
+          </div>
+          <div>
+          <NavLink to="/login">
           <button>Get started</button>
           </NavLink>
+          </div>
         </div>
         <div className='video'>
           <a href="https://www.youtube.com/watch?v=Iy49L8a8i7M">
@@ -199,7 +204,7 @@ const Mainbody = () => {
         <Text fontSize="l" color="white" style={{textAlign:"center"}} mb={10}>across the Apple App store and Google play and Capterra</Text>
       </div>
         
-        
+          <Footer></Footer>
 
 
       
