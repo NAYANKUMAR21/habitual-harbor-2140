@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Main.css"
-import Footer from './Footer'
+import Footer from './footer'
 import { Box, Text } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
@@ -76,15 +76,15 @@ const Mainbody = () => {
               </ul>
               <Text fontSize="l" style={{textAlign:"left"}} mt={10} mb={10}>Take your mind maps to the next level using AI. <br /> Available in <strong>Ayoa Ultimate only</strong></Text>
               <NavLink >
-                <button   colorScheme="">Find out more</button>
+                <button >Find out more</button>
               </NavLink>
           </div>
           <Text style={{textAlign:"center"}} mt={100} mb={50} fontSize="6xl" fontWeight="800">Choose creativity or productivity, <br /> or why not have it all?</Text>
           <div className='choose-grid'>
             <div>
-              <Text fontSize="3xl" mb={5} fontWeight="700" color="#6A2FCC">Ayoa Mind map</Text>
+              <Text fontSize="3xl" mb={5} style={{textAlign:"left"}} fontWeight="700" color="#6A2FCC">Ayoa Mind map</Text>
               <Text  fontSize="xl" mb={10} style={{textAlign:"left"}} > Great for those looking to brainstorm <br /> ideas and get creative</Text>
-              <ol >
+              <ol style={{textAlign:"left"}}>
                 <li>✔️ Organic mind map</li>
                 <li>✔️ Speed mind maps</li>
                 <li>✔️ Radial mind maps</li>
@@ -96,9 +96,9 @@ const Mainbody = () => {
             </div>
             
             <div>
-            <Text fontSize="3xl" mb={5} fontWeight="700" color="#73C43B">Ayoa Task</Text>
+            <Text fontSize="3xl" mb={5} fontWeight="700" style={{textAlign:"left"}} color="#73C43B">Ayoa Task</Text>
               <Text  fontSize="xl" mb={10} style={{textAlign:"left"}} >Easily manage your workload and  <br /> meet your deadline</Text>
-              <ol >
+              <ol style={{textAlign:"left"}}>
                 <li>✔️ Work flow view</li>
                 <li>✔️ Canvas view</li>
                 <li>✔️ Urgency list</li>
