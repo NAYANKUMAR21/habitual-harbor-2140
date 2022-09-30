@@ -93,6 +93,7 @@ input[type="text"]{
     color: white;
     border-radius: 8px;
     text-align: left;
+    
 }
 .full-compare-btn button{
     padding: 10px 40px;
@@ -101,7 +102,7 @@ input[type="text"]{
     background:  #1a9ef6;
     color: white;
     border-radius: 5px;
-    margin-left: 530px;
+    
     margin-top: 50px;
     
 }
@@ -150,7 +151,7 @@ input[type="text"]{
 .auto{
     
     margin-top: 30px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     line-height: 2;
 }
 .slider{
@@ -267,20 +268,9 @@ input[type="text"]{
 }
 /* medium screen */
 @media all and (min-width:"320px") and (max-width:"767px"){
-    .get-started{
-        
-        display: grid;
-        grid-template-columns:repeat(1,33%) ;
-        grid-template-rows: repeat(2,1fr);
-    }
+    
 }
 /* big screen */
 @media all and (min-width:"768px") and (max-width:"1050px"){
-    .get-started{
-        
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
-        
-    }
+    
 }

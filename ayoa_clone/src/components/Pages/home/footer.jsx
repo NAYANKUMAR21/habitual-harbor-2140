@@ -103,7 +103,7 @@ const Footer = () => {
                     })
             }
       </div>
-      <hr color="teal"/>
+      
       <div className='footer-bar'>
         <div>
             <div>
