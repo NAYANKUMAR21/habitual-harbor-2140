@@ -13,7 +13,7 @@ const getdata = ({email,password})=>{
     })
 }
 const Login = () => {
-    const {Auth,handleAuth,setToken}= useContext(AuthContext)
+    const {Auth,handleAuth,setToken,setName,name}= useContext(AuthContext)
     const navigate = useNavigate()
     const [cred,setcred] = useState({
         email:"",
@@ -27,10 +27,13 @@ const Login = () => {
     const handleSubmit = (e)=>{
         e.preventDefault()
         console.log(cred)
+        const {email} = cred
+        setName({...name,email})
         getdata(cred).then((res)=>{
             console.log(res.data)
             setToken({...res.data})
             handleAuth()
+            console.log(name)
             navigate("/login/dashboard")
         })
         .catch((er)=>console.log(er))
