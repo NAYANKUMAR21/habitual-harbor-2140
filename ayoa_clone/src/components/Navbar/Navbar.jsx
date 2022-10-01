@@ -27,7 +27,7 @@ const Navbar = () => {
     
 
   return (
-    <div className='parent-nav'>
+    <>
       <nav className='nav'>
         <div className='logo'>
             <img src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/ayoa_bluenavlogo.svg" alt="logo" />
@@ -139,7 +139,7 @@ const Navbar = () => {
                     state ? <Dropdown/> :null
         }
       <hr />
-    </div>
+    </>
   )
 }
  export default Navbar
