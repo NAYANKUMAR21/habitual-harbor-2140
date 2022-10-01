@@ -1,3 +1,79 @@
-.token{
-    margin-top: 150px;
+.dash-body{
+    background-color: rgb(248, 250, 251);
 }
+.dash-nav{
+    margin-top: 0px;
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+.rightBar{
+    width:20%;
+    padding-top: 100px;
+    
+}
+.sideBar{
+    width: 80%;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(248, 250, 251);
+}
+.rightBar>div{
+    width: 50%;
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid yellow; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius:10px ;
+    margin-bottom: 20px;
+    margin-left: 00px;
+    
+}
+.rightBar>div>div{
+    width: 25%;
+}
+.sideBar>div{
+    /* border: 1px solid black; */
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+.sideBar>div{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.top-sideBar,.input-feilds{
+    display: flex;
+    justify-content: space-between;
+}
+.search-icon{
+    font-size: 20px;
+    position: relative;
+    top:25%;
+    left:13%;
+}
+.bottom-box p{
+    color: #3c3f43;
+}
+
+.bottom-box{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+.bottom-box>div{
+    padding: 50px;
+}
+.bottom-box p+p{
+    margin-bottom: 20px;
+}
+.bottom-box>div:nth-child(2)>p:nth-child(2){
+    margin-top: 20px;
+    }
