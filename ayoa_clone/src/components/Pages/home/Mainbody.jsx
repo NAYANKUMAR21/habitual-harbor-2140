@@ -180,7 +180,7 @@ const Mainbody = () => {
       <h1 style={{fontSize:"50px",textAlign:"center",color:"white"}}><strong>Try <span className='symbol'>AYOA</span> today</strong></h1>
       <div className='get-started start2'>
           <input type="text" placeholder='Enter your Email'/>
-          <NavLink to="/">
+          <NavLink to="/login">
           <button>Get started</button>
           </NavLink>
         </div>

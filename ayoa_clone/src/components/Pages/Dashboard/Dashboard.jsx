@@ -8,8 +8,8 @@ import {BiSearch} from "react-icons/bi"
 import {FaFilter} from "react-icons/fa"
 import { TbAlignJustified } from "react-icons/tb";
 const Dashboard = () => {
-    const {token,name} = useContext(AuthContext) 
-    console.log(name)
+    const {token,name,Auth} = useContext(AuthContext) 
+    console.log(name,Auth,"dashboard")
     const {email}  = name
 
     var sum = ""
@@ -48,11 +48,17 @@ const Dashboard = () => {
           </div>
           <div>
             <div>
-            <img src="https://app-assets.ayoa.com/8.96.6/images/icons/home.svg" alt="home" />     
+            <img src="https://app-assets.ayoa.com/8.96.6/images/icons/planner.svg" alt="Notes" />     
             </div>
-            <h1 style={{fontWeight:" bold"}}>Home</h1>
+            <h1 style={{fontWeight:" bold"}}>Note</h1>
           </div>
-
+          <div>
+            <div>
+            <img src="https://app-assets.ayoa.com/8.96.6/images/icons/search-icon.png" alt="Search" />     
+            </div>
+            <h1 style={{fontWeight:" bold"}}>Search</h1>
+          </div>
+    
          </div>
          <div className='sideBar'>
           <div>
