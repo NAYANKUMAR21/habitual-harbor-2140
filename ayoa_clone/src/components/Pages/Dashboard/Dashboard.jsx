@@ -7,10 +7,13 @@ import {GiHamburgerMenu } from "react-icons/gi"
 import {BiSearch} from "react-icons/bi"
 import {FaFilter} from "react-icons/fa"
 import { TbAlignJustified } from "react-icons/tb";
+import { Navigate } from 'react-router-dom'
 const Dashboard = () => {
     const {token,name,Auth} = useContext(AuthContext) 
     console.log(name,Auth,"dashboard")
+    console.log(Auth,"login dashbord")
     const {email}  = name
+    
 
     var sum = ""
   for(let i=0;i<email.length;i++){
@@ -23,6 +26,10 @@ const Dashboard = () => {
     console.log(email,email[0],sum)
     const code = token.token
     console.log(code,"dahborard")
+
+    
+
+
   return (
       <div className='dash-body'>
       <div style={{margin:"auto",display:"flex",justifyContent:"space-evenly"}}>

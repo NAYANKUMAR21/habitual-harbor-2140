@@ -13,7 +13,7 @@ const getdata = ({email,password})=>{
     })
 }
 const Login = () => {
-    const {Auth,handleAuth,setToken,setName,name}= useContext(AuthContext)
+    const {Auth,setAuth,setToken,setName,name}= useContext(AuthContext)
     const navigate = useNavigate()
     const [cred,setcred] = useState({
         email:"",
@@ -32,16 +32,16 @@ const Login = () => {
         getdata(cred).then((res)=>{
             console.log(res.data)
             setToken({...res.data})
-            handleAuth()
+            setAuth(!Auth)
             console.log(name)
             navigate("/login/dashboard")
         })
         .catch((er)=>console.log(er))
         .finally(()=>console.log("!finally completed"))
     }
-
+console.log(Auth,"login inside")
     
-    console.log(Auth,handleAuth)
+
 
   return (
             <>

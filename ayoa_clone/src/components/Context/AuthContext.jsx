@@ -13,7 +13,7 @@ function AuthContextProvider({children}){
     console.log(token,"auth")
     
     return(
-        <AuthContext.Provider value={{Auth,handleAuth,setToken,token,setName,name}}>
+        <AuthContext.Provider value={{Auth,handleAuth,setAuth,setToken,token,setName,name}}>
             {children}
         </AuthContext.Provider>
     ) 

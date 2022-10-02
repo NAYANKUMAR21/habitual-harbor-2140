@@ -2,9 +2,11 @@ import React from 'react'
 import "./Main.css"
 import Footer from './footer'
 import { Box, Text } from '@chakra-ui/react'
-import { NavLink } from 'react-router-dom'
+import { Navigate, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import Slider from './SliderContent'
+import { useContext } from 'react'
+import { AuthContext } from '../../Context/AuthContext'
 const partners = [{img:"https://www.ayoa.com/wp-content/uploads/2021/04/amazon_logo_new.png"},
 {img:"https://www.ayoa.com/wp-content/uploads/2021/04/samsung_logo_new.png"},{img:"https://www.ayoa.com/wp-content/uploads/2021/04/oracle_logo_new.png"},
 {img:"https://www.ayoa.com/wp-content/uploads/2021/04/continental_logo_new.png"},{img:"https://www.ayoa.com/wp-content/uploads/2021/04/salesforce_logo_new.png"},
@@ -26,6 +28,10 @@ const channel_data = [{image:"https://www.ayoa.com/wp-content/uploads/2018/05/cb
                   
 const Mainbody = () => {
   const [state,setState] = useState(0)
+  const {Auth}  = useContext(AuthContext)
+  // if(Auth===true){
+  //   return <Navigate to="/login/dashboard"/>
+  // }
   return (
     <>
     <div className='body'>
