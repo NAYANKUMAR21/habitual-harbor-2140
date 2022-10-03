@@ -126,6 +126,12 @@ input[type="text"]{
 .choose-grid>div:nth-child(3){
     padding: 0px;
 }
+.choose-grid>div>ol>li{
+    text-align: left;
+}
+.choose-grid>div:nth-child(3)>ol>li{
+    text-align: center;
+}
 .opaque-img{
 
     width:80%;

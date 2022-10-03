@@ -1,13 +1,12 @@
-import {  Text,Button, Input, Flex } from '@chakra-ui/react'
+import {  Text,Button, Input } from '@chakra-ui/react'
 import React from 'react'
 import { useContext } from 'react'
 import {AuthContext} from '../../Context/AuthContext'
 import "./dashboard.css"
-import {GiHamburgerMenu } from "react-icons/gi"
 import {BiSearch} from "react-icons/bi"
 import {FaFilter} from "react-icons/fa"
 import { TbAlignJustified } from "react-icons/tb";
-import { Navigate } from 'react-router-dom'
+
 const Dashboard = () => {
     const {token,name,Auth} = useContext(AuthContext) 
     console.log(name,Auth,"dashboard")
