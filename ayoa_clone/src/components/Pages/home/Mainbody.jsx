@@ -29,9 +29,9 @@ const channel_data = [{image:"https://www.ayoa.com/wp-content/uploads/2018/05/cb
 const Mainbody = () => {
   const [state,setState] = useState(0)
   const {Auth}  = useContext(AuthContext)
-  if(Auth){
-    return <Navigate to="/dashboard"/>
-  }
+  // if(Auth){
+  //   return <Navigate to="/dashboard"/>
+  // }
   return (
     <>
     <div className='body'>
